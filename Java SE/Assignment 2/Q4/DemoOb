@@ -1,0 +1,5 @@
+public class DemoOb{
+	DemoOb(int k){
+		System.out.println("in def constr\t"+k);
+	}
+}
