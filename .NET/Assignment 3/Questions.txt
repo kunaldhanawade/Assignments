@@ -1,0 +1,34 @@
+Q1. Create a class student with member variable name, maths, science, english
+    Create a method which will return total marks[300]
+    Create a method which will display name and total.
+
+Q2. Create a class account having member name , id, balance
+    Create a method -public void deposit(int amt){ balance=balance+amt}
+    Create a method withdraw  -public void withdraw(int amt){ balance=balance-amt}
+    Create display method which will display name and balance.    Create 2 object and do transaction. 
+
+Q3. Create class Employee with private vatiable id name salary, netsalary
+    Create method public double Calculatesal()
+    Which will return net salary. Netsalary= salary-salary*10%
+    Create method display which will display Name and net salary.
+    Create 3 object of a class and call display method.
+
+Q4. Open previous example of Class student
+    As soon as you run your code it should print name of school
+
+Q5. Open previous example of Class Account
+    As soon as you run your code it should print name of the bank
+
+Q6. Create class Employee having member Id, Name, Salary,  NetSalary, Dept d
+    Create enum Dept {MKT, ADMIN, ADV}
+    Create method public double paytax(double p) {return tax amount and set netsalary(note: netsalary=salary-salary*p%)}
+    Create method display to display name and netsalary and department
+    When you load application it should print name of company.
+        new Employee(1,”Raj”,50000,Dept.MKT)
+
+Q7. Open class students and add static method
+    One question was wrong in maths paper
+        Public static void Give_ marks(students s)
+        {
+            s.maths=s.maths+5;
+        }
