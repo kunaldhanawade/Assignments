@@ -37,7 +37,7 @@ namespace AccountDemo
 
         public void deposit(double amount)
         {
-            if (balance > 0)
+            if (amount > 0)
             {
                 balance += amount;
             }
