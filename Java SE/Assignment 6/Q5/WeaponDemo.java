@@ -1,3 +1,5 @@
+package weaponpack;
+
 public class WeaponDemo {
 
 	public static void main(String[] args) {
