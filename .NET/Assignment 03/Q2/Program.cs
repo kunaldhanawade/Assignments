@@ -10,8 +10,8 @@ namespace MyConsoleApp
             a1.withdraw(45000);
 
             Account a2 = new Account("Sarthak Dhargalkar");
-            a1.deposit(10000);
-            a1.withdraw(4000);
+            a2.deposit(10000);
+            a2.withdraw(4000);
         }
     }
 }
