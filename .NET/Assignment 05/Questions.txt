@@ -1,0 +1,6 @@
+Q1. Write a method which will return sum of digit and using out variable let it send count of digit also.
+	Eg. input 123  return(6) in out variable (3)
+
+Q2. Write a method which will accept two number and return all even number between it as array and also give count in out variable.
+		Int count=
+		Int [] result=Dojob(5,30)
