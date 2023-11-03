@@ -1,0 +1,5 @@
+Create a table 'customer' with columns: id, name, address, mobile number
+Display all records
+Insert new customer details
+Update customer name where id = 1
+Delete the record where id = 3
