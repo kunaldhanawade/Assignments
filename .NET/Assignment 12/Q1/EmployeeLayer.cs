@@ -26,7 +26,7 @@ namespace MyConsoleApp
                 Console.WriteLine("connected");
                 SqlDataReader data = cmd.ExecuteReader();
 
-                while(data.HasRows)
+                if(data.HasRows)
                 {
                     while(data.Read())
                     {
