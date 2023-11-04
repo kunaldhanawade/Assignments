@@ -1,0 +1,7 @@
+use table customer and complete the following task:
+	1. display all customer data and display strongly typed (object)
+	2. accept id from the user and delete a particular customer
+	3. create an object of the customer and store data in customer table
+	4. write search method with parameter Id
+	5. write search method with parameter string (name,mobile)
+	6. accept id and name from the user and update the record
