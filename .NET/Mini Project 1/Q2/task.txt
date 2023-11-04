@@ -1,0 +1,7 @@
+Create database HR with Table Employee having column name Id, Name, Salary, Gender, Address.
+Create Data_Layer class and complete CRUD operation
+Public void Add(Employee e){} // Create
+Public void Delete(Int Id ){ } //Delete
+Public  void Update(Employee e, int Id){} Update
+Public Employee Get(int id)// Read one record 
+Public List<Employee> GetAll(){} //Display all data
