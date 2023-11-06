@@ -1,3 +1,5 @@
+In memory CRUD Console app
+
 Create database HR with Table Employee having column name Id, Name, Salary, Gender, Address.
 Create Interface IEmployeeRepository with following methods
 	 Employee GetEmployee(int Id);
