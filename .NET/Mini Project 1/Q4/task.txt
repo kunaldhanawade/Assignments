@@ -1,9 +1,17 @@
-Entity CRUD
+Create a POCO class Employee with members ID, Name, Salary, DeptID (int)
+Create another class Department with menbers ID, DeptName
+Create a Context class derived from DbContext
+Set the connectionString in OnConfiguring method
+Put DBSet() - Department, Employee
+Download 4 DLL Files
+Add migration and Update Database
 
-Create database HR with Table Employee having column name Id, Name, Salary, Gender, Address.
-Create Data_Layer class and complete CRUD operation
-Public void Add(Employee e){} // Create
-Public void Delete(Int Id ){ } //Delete
-Public  void Update(Employee e, int Id){} Update
-Public Employee Get(int id)// Read one record 
-Public List<Employee> GetAll(){} //Display all data
+Task
+	- Display all Employees who are in Dept 1
+	- Display all Employees
+	- Enter data first in Dept Table and then in Employee Table
+	- Add Employee record through entity
+	- Delete Employee where EmpId=3
+	- Display DeptName and Employees within it
+	- Display all Employees whose Salary>80000
+	- Display all Employees whose Name starting with 'S'
