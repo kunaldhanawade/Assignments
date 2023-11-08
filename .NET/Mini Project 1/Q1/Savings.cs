@@ -18,6 +18,16 @@ namespace AccountDemo
             {
                 Balance = x;
                 OnWithdraw(amount, Balance, Name, Id);
+
+                AccountState ac = new AccountState
+                {
+                    Name = Name,
+                    Id = Id,
+                    Balance = Balance,
+                    Amount = amount,
+                    Transaction = "Debit"
+                };
+                Serialize.SaveAsXmlFormat(ac, @$"..\Data\{Name}_{Id}.xml");
             }
             else
                 throw new Exception("Insufficient Balance\n");
@@ -32,7 +42,7 @@ namespace AccountDemo
             if (acc.Balance > 0)
             {
                 interest = acc.Balance * interestRate;
-                acc.deposit(interest);
+                acc.deposit(interest, "Interest");
             }
             return interest;
         }

@@ -16,6 +16,16 @@ namespace AccountDemo
                 Console.Beep();
                 Console.WriteLine("Reminder: Your Balance is less than Rs. 0.  Please deposit money to maintain a positive balance.\n");
             }
+
+            AccountState ac = new AccountState
+            {
+                Name = Name,
+                Id = Id,
+                Balance = Balance,
+                Amount = amount,
+                Transaction = "Debit"
+            };
+            Serialize.SaveAsXmlFormat(ac, @$"..\Data\{Name}_{Id}.xml");
         }
     }
 }

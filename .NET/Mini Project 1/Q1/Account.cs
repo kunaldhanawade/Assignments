@@ -1,4 +1,6 @@
 ﻿
+using System.Xml.Serialization;
+
 namespace AccountDemo
 {
     public delegate void notifyOnDeposit(double amount, double balance, string name, int id);
@@ -53,6 +55,17 @@ namespace AccountDemo
             get { return balance; }
         }
 
+        protected void SaveAsXmlFormat(object objGraph, string fileName)
+        {
+            XmlSerializer xmlFormat = new XmlSerializer(typeof(AccountState));
+
+            using (Stream fStream = new FileStream(fileName, FileMode.Create, FileAccess.Write))
+            {
+                xmlFormat.Serialize(fStream, objGraph);
+            }
+            Console.WriteLine("=> Saved Account in XML format!");
+        }
+
         public abstract void withdraw(double amount);
 
         public void OnWithdraw(double amount, double balance, string name, int id)
@@ -67,12 +80,21 @@ namespace AccountDemo
                 notifyOnDepositEvent(amount, balance, name, id);
         }
 
-        public void deposit(double amount)
+        public void deposit(double amount, string state="Credit")
         {
             if (amount > 0)
             {
                 balance += amount;
                 OnDeposit(amount, Balance, Name, Id);
+                AccountState ac = new AccountState
+                {
+                    Name = Name,
+                    Id = Id,
+                    Balance = Balance,
+                    Amount = amount,
+                    Transaction = state
+                };
+                Serialize.SaveAsXmlFormat(ac, @$"..\Data\{Name}_{Id}.xml");
             }
             else
                 throw new Exception("Invalid Input\n");
