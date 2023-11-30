@@ -1,0 +1,6 @@
+create table "Employee"
+	empid,empname,desig
+
+	add 5 records manually.
+
+   Now write a java program to accept "designation" from user and retrieve employees with the given designation.
