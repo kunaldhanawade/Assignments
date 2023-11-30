@@ -1,3 +1,4 @@
+student table
 	rollno primary key auto
 	name 
 	age
