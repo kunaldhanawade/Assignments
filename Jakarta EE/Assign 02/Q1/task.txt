@@ -1,0 +1,19 @@
+	rollno primary key auto
+	name 
+	age
+	address
+
+			student.html
+
+		two links
+			add student -  
+					data.html
+
+					<form action=AddStudent >
+							init & doPost
+						enter name
+						enter age
+						enter address
+
+			view student-  ViewStudent
+						init and doGet
