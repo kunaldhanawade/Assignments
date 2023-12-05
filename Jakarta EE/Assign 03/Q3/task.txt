@@ -1,0 +1,3 @@
+a) write a Servlet to read init parameter [ coder = Sachin ] and context parameter [ group=evengers ]
+
+b) write a servlet to read context parameter [ group=evengers ]
