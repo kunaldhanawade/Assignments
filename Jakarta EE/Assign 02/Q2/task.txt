@@ -1,0 +1,6 @@
+create a table "student" with
+	rollno,name,age,qualification
+
+create "student.html" to accept rollno,name,age and qualification from a user.
+
+after submit, control should go to "StudentServ1" which will save above information inside "student" table.
