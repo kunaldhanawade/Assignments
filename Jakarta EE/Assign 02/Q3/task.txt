@@ -1,0 +1,6 @@
+create a table "book" with
+		id,bookname,authorname,price
+
+add 4 records.
+
+write a Servlet "BookServ" which will retrieve all the records from "book" table and display.
