@@ -1,0 +1,19 @@
+define a class "Dept" inside "mypack"
+
+the class should have following members
+int deptno;
+String dname;
+String loc;
+
+with getter and setter methods
+
+jsp -> servlet 
+
+	in jsp u need to have
+  Search By loc:-  <textfield>
+  <submit>
+
+user will enter "location" and click on submit. Request will go to Servlet , which will search records from database where location is  the one entered by user. while traversing from resultset servlet will create objects of Dept and initialize it with database values i.e. deptno,dname and loc. Also servlet will add each and every object of Dept inside ArrayList. 
+Now store this ArrayList inside "request" attribute and forward it to the same jsp from where u have come inside servlet.
+
+jsp will display the arraylist using EL.
