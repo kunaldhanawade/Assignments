@@ -1,0 +1,8 @@
+user.html
+	accept user name
+
+UserServ
+	should display the entered user name
+
+UserFilter
+	should append "123" to the user name entered and it should be stored inside "user.txt". Moreover file should go on appending user names as and when we run "user.html"
