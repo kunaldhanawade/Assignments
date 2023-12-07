@@ -1,0 +1,11 @@
+tag name is today which displays current date
+
+<%@taglib prefix="abc" uri="/WEB-INF/diff.tld"%>
+Before tag starts
+<br><b>
+<abc:today/>
+</b><br>
+After tag
+<br>
+
+hint: use java.util.date;
