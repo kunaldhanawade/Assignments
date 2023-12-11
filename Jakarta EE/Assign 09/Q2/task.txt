@@ -1,0 +1,13 @@
+generate an entity class "Dept" inside "mypack" using reverse engg technique.
+
+Data.jsp -> DataServlet 
+
+	in jsp u need to have
+		Search By loc:-  <textfield>
+		<submit>
+
+user will enter "location" and click on submit. Request will go to DataServlet , which will search records from database where location is  the one entered by user (using HQL). This will give a servlet List which will contain "Dept" objects for matching condition.
+
+servlet will store this List inside "request" attribute and forward it to the same jsp i.e. "Data.jsp" from where u have come inside servlet.
+
+Data.jsp will display the arraylist using EL and JSTL.
