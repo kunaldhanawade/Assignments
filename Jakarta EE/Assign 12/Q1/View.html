@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Kunal Dhanawade</title>
+</head>
+
+<body>
+	<table border="100" cellspacing="10" cellpadding="10">
+		<tr>
+			<td>Name:</td>
+			<td>
+				<p th:text="${myperson.name}">
+			</td>
+		</tr>
+		<tr>
+			<td>Address:</td>
+			<td>
+				<p th:text="${myperson.address}">
+			</td>
+		</tr>
+		<tr>
+			<td>Age:</td>
+			<td>
+				<p th:text="${myperson.age}">
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
