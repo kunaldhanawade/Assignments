@@ -1,0 +1,13 @@
+STACK PROGRAMS
+
+1. postfix evaluation
+	Refer Postfix_Evaluation.java and MyCharStack.java
+
+2. convert infix to prefix
+	Refer Infix_to_Prefix.java and MyCharStack.java
+
+3. reverse stack
+	Refer Reverse_Stack.java and MyCharStack.java
+
+4. sort stack using other stack
+	Refer Sort_Stack.java and MyIntStack.java
