@@ -1,0 +1,10 @@
+Using Linear Linked List implement CURD operation on Employee data
+
+Employee data: id, name, gender, salary
+
+Menu-driven code for:
+1: Register Employee
+2: Search Employee-on id
+3: Delete Employee-on id
+4: Update Details/correct-only name,gender,salary can be corrected
+  (Hint: 4---id----give id====1.update name 2.update gender 3.update salary)
